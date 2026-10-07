@@ -1,6 +1,6 @@
 SELECT
     uf,
-    COUNT(*) AS acidentes
+    COUNT(*) AS total_acidentes
 FROM acidentes
 GROUP BY uf
-ORDER BY acidentes DESC;
+ORDER BY total_acidentes DESC;

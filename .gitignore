@@ -1,14 +1,38 @@
+# Ambiente virtual
 .venv/
+venv/
+
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
 
+# Jupyter
 .ipynb_checkpoints/
 
+# VS Code
+.vscode/
+
+# Streamlit
+.streamlit/
+
+# Banco local
+data/*.duckdb
+
+# Dados brutos e processados
 data/raw/
 data/processed/
+
+# Camada analytics gerada
 data/analytics/
 
-*.duckdb
-*.db
+# Arquivos temporários
+*.log
+*.tmp
 
-.env
+# Sistema
+.DS_Store
+Thumbs.db

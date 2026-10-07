@@ -1,6 +1,6 @@
 SELECT
-    YEAR(data_inversa) AS ano,
-    COUNT(*) AS acidentes
+    ano,
+    COUNT(*) AS total_acidentes
 FROM acidentes
 GROUP BY ano
 ORDER BY ano;

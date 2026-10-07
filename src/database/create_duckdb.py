@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 CAMINHO_PARQUET = Path(
-    "data/processed/prf_2022_2026.parquet"
+    "data/processed/prf_2022_2026_clean.parquet"
 )
 
 CAMINHO_BANCO = Path(
@@ -29,9 +29,7 @@ def criar_banco():
         """
     )
 
-    print(
-        "View 'acidentes' criada com sucesso."
-    )
+    print("View 'acidentes' criada com sucesso.")
 
     quantidade = conexao.execute(
         """
@@ -45,6 +43,8 @@ def criar_banco():
     )
 
     conexao.close()
+
+    print("Banco criado com sucesso.")
 
 
 if __name__ == "__main__":
